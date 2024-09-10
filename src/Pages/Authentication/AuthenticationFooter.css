@@ -1,0 +1,33 @@
+.q-box {
+
+}
+.qu-py--medium  {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.qu-textAlign--center {
+    text-align: center;
+}
+.qu-borderTop {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #dee0e1;
+}
+.q-text {
+    box-sizing: border-box;
+}
+.qu-dynamicFontSize--small {
+    font-size: calc(13px* var(--dynamic-font-scale, 1)) !important;
+}
+.qu-display--none {
+    /* display: none; */
+}
+.linkStyle {
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #636466;
+}
+.spanStyle {
+    separator: " · ";
+}

@@ -1,0 +1,29 @@
+.sidebarOptions {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar :hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.sidebar > img {
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.sidebar > p {
+    color: gray;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.sidebar > .muiSvgIcon-root {
+    color: gray;
+    font-size: medium;
+    margin-left: 20px;
+}

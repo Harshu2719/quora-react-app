@@ -1,0 +1,21 @@
+.homePageStyle {
+    display: flex;
+    width: 63%;
+    margin: auto;
+    padding: 16px 16px;
+}
+.leftSideStyle {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+}
+.middleStyle {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+}
+.rightSideStyle {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}

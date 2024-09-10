@@ -1,0 +1,174 @@
+.feed {
+    width: 90%; 
+    margin: auto;  
+}
+.feedPageMain {
+    display: flex;
+}
+
+
+
+/* middle feed css */
+
+
+
+.feedContainer1 {
+    width: 100%;
+    margin-top: 40px;
+}
+.userImage {
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    width: 36px;
+    height: 36px;
+}
+.feeddiv {
+    /* margin-left: 25px; */
+    width: 100%;
+    border: 1px solid rgb(213 213 213);
+    border-radius: 8px;
+   
+    margin-bottom: 10px;
+}
+.userNameStyle {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(41, 41, 40);
+}
+.userNameStyleDate {
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.contentImagediv {
+    width: 100%;
+    margin-bottom: 3px;
+    align-content: center;
+}
+.titleContentStyle {
+    padding-left: 10px;
+}
+.contentImage{
+    width: 99.98%;
+    height: auto;
+    border-radius: 3px;  
+    
+}
+.contentText {
+    font-family: Roboto;
+}
+.nameImageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.questionstyle {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: 700; 
+}
+.contentText {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: -apple-system ;
+}
+
+
+/* deletePostButtonStyle */
+
+
+.deletePostButtonStyle {
+    border: none;
+    background: white;
+}
+
+
+
+
+.contentfooterStyle {
+    display: flex;
+    align-items: center;
+}
+.likeDislikeStyle {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    border: 1px solid rgb(213 213 213);
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(255, 255, 255, 0.6);
+    height: 30px;
+}
+.likeDislikeCommentButtonStyle {
+    border: 1px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.LikeCommentStyle {
+    display: flex;
+    padding-left: 8px;
+    margin-bottom: 5px;
+}
+.upvoteBorderStyle {
+    display: flex;
+    justify-content:center;
+    border-right: 1px solid rgb(213 213 213);
+    padding-right: 5px;
+}
+
+
+/* UPLOAD COMMENT STLYING */
+
+
+.commentStyle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.commentBoxStyle {
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 242, 242);  
+    justify-content: space-evenly;  
+    border-radius: 0px 0px 8px 8px;
+    height: 55px;
+}
+.commentProfileStyle {
+    text-decoration: none;
+    color: black;
+}
+.commentInputStyle {
+    width: 70%;
+    border-radius: 25px;
+    height: 35px;
+    border: 1px solid rgb(241, 242, 242);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+}
+.commentButtonStyle {
+    height: 36px;
+    border-radius: 25px;
+    background-color: rgb(40, 125, 255);
+    color: white;
+    border: none;
+    font-size: 13px
+}
+
+
+
+
+/*     seeAllcomment */
+
+
+.comment1 {
+    display:flex;
+    align-items: center;
+}
+
+
+

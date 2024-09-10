@@ -1,0 +1,32 @@
+.SearchHomePageStyle {
+    
+    width: 32%;
+    margin: auto;
+    padding: 16px 16px;
+}
+
+
+
+.feeddivSearch {
+    margin-left: 25px;
+    width: 588px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.contentImagedivSearch {
+    width: 588px;
+    /* border: 1px solid black; */
+}
+.contentImage{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;  
+}
+.contentTextSearch {
+    font-family: Roboto;
+}
+.searchedNameImageDiv {
+    display: flex;
+    align-items: center;
+}
