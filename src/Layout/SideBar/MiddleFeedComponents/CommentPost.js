@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './FeedComponent.css';
 import { FaRegComment } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 
 const CommentPost = ({obj, isCommentButtonClicked, setIsCommentButtonClicked}) => {
-    
-    
+    const [commentCount, setCommentCount] = useState();
+    const comments = useSelector(store => store.postComments.comments);
     const handleShowComment = ()=> {
         setIsCommentButtonClicked(!isCommentButtonClicked);
-        console.log(isCommentButtonClicked);
     }
+    useEffect(()=> {
+      setCommentCount(comments.get(obj?._id)?.length)
+    },[])
+    //console.log(comments.get(obj?._id)?.length);
   return (
     <div>
         <div className='commentStyle'>

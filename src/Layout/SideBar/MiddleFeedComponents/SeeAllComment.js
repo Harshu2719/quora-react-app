@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setComments } from '../../../ReduxStore/CommentsSlice';
 
 const SeeAllComment = ({obj, setComment, handleCommentAPICall}) => {
-    const [allComments, setAllComments] = useState(); //TODO: cleanups
+
     const [refreshComment, setRefreshComment] = useState(false);
     const dispatch = useDispatch()
     const commentsMap = useSelector(store => store.postComments.comments)
@@ -21,13 +21,13 @@ const SeeAllComment = ({obj, setComment, handleCommentAPICall}) => {
             }
         })
         const data = await response.json();
-        //console.log(data?.data);
+        console.log(data?.data);
         const payload = {
             id: obj?._id,
             comments: data?.data
         }
         dispatch(setComments(payload));
-        setAllComments(data?.data);
+  
     }
     useEffect(()=> {
         allCommentAPI()

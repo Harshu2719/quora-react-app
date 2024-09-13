@@ -67,3 +67,10 @@
     font-weight: 500;
     height: 30px;
 }
+.logoutButtonStyle {
+    border: none;
+    background-color: white;
+}
+.logoutButtonStyle:hover {
+    background-color: #dee0e1
+}

@@ -22,21 +22,21 @@ const LikeDisLikeComponent = ({obj}) => {
             setIsLikeClicked(true)
             setIsDisIsLikeClicked(false)
             if(dislikeCount !== 0) {
-                Object.defineProperty(obj, "dislikeCount", {value: dislikeCount-1})
+                //Object.defineProperty(obj, "dislikeCount", {value: dislikeCount-1})
                 setDislikeCount(dislikeCount-1);
             }
             setLikeCount(likeCount+1)
-            Object.defineProperty(obj, "likeCount", {value: likeCount+1})           
+            //Object.defineProperty(obj, "likeCount", {value: likeCount+1})           
         }else {
             setIsLikeClicked(false)
             setIsDisIsLikeClicked(true)
             if(likeCount !== 0) {
                 // obj?.likeCount--;
-                Object.defineProperty(obj, "likeCount", {value: likeCount-1})
+                //Object.defineProperty(obj, "likeCount", {value: likeCount-1})
                 setLikeCount(likeCount-1);
             }
             setDislikeCount(dislikeCount+1)
-            Object.defineProperty(obj, "dislikeCount", {value: dislikeCount+1})
+            //Object.defineProperty(obj, "dislikeCount", {value: dislikeCount+1})
             // obj?.dislikeCount++;
         }
         const response = await fetch(`https://academics.newtonschool.co/api/v1/quora/like/${obj?._id}`, {

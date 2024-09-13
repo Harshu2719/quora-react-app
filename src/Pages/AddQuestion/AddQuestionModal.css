@@ -5,6 +5,19 @@
     
 
 }
+.modalContent {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    min-height: 400px;
+    max-height: 80vh;
+    max-width: 90vw;
+    width: 730px;
+    border-radius: 8px;
+    transition-property: opacity, transform;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in-out;
+}
 .createPostButton {
     border: none;
     background-color: white;
@@ -22,8 +35,26 @@
 .modalStyle2 {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 .modalStyle3{
     width: 100%;
     align-self: center;
+    border:none;
+}
+.inputTitleStyle {
+    border-bottom: 1px solid #dee0e1;
+    border-top: none;
+    margin-bottom: 4px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+.inputTitleStyle : focus {
+    border-bottom: 1px solid #dee0e1;
+    border-top: none;
+    margin-bottom: 4px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
 }

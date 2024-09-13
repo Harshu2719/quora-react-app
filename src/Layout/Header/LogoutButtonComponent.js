@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { authenticateUser } from '../../ReduxStore/AuthSlice.js';
+import './HeaderComponent.css';
 
 
 const LogoutButtonComponent = () => {
@@ -16,7 +17,7 @@ const LogoutButtonComponent = () => {
     }
   return (
     <div>
-        <button onClick={()=> handleLogout()} >Logout</button>
+        <button className='logoutButtonStyle' onClick={()=> handleLogout()} >Logout</button>
     </div>
   )
 }

@@ -38,6 +38,8 @@
 .userNameStyleDate {
     font-size: 13px;
     font-weight: 400;
+    margin-left: 6px;
+    color: rgb(99, 100, 102)
 
 }
 .contentImagediv {

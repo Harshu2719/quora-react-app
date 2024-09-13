@@ -57,14 +57,14 @@ function AddQuestionModal({show, setShow}) {
   const handleClose = () => setShow(false);
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal className='modalContent' show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          
+          <h4 className='createPostButton'>Create Post</h4>
         </Modal.Header>
         <Modal.Body>
           <div className='modalStyle1'>
-            <button className='createPostButton'>Create Post</button>
-            <div className='underlineStyle'></div>
+            
+            {/* <div className='underlineStyle'></div> */}
           </div>
           <div className='modalStyle2'>
             <IoPersonCircleOutline size={36} />
@@ -73,7 +73,7 @@ function AddQuestionModal({show, setShow}) {
               <option className='optionStyle' value="Limited">Limited</option>
             </select>
           </div>
-          <input onChange={(e)=> handleTitle(e)} placeholder='Title for the post'></input>
+          <input className='inputTitleStyle' onChange={(e)=> handleTitle(e)} placeholder='Title for the post'></input>
           <textarea  onChange={(e)=> storePost(e)} className='modalStyle3' placeholder='Start writing about your post....'></textarea>
         </Modal.Body>
         <Modal.Footer>

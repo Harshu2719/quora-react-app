@@ -20,11 +20,11 @@ const AskQuestion = () => {
             <input onClick={()=> handleButton()} className='style2Input' placeholder='What do you want to ask or shear' />               
         </div>
         <div className='style3'>
-            <button className='style3Button'> <TbMessageQuestion /> Ask </button>
+            <button onClick={()=> handleButton()} className='style3Button'> <TbMessageQuestion /> Ask </button>
             <p style={{marginBottom: '0'}}>|</p>
-            <button className='style3Button'> <BsPencilSquare /> Answer</button>
+            <button onClick={()=> handleButton()} className='style3Button'> <BsPencilSquare /> Answer</button>
             <p style={{marginBottom: '0'}}>|</p>
-            <button className='style3Button'> <GoPencil /> Post</button>
+            <button onClick={()=> handleButton()} className='style3Button'> <GoPencil /> Post</button>
         </div>
     </div>
     {show && <AddQuestionModal show={show} setShow={setShow} />}

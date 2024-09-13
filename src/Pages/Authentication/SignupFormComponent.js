@@ -52,6 +52,7 @@ const SignupFormComponent = ({handleClose}) => {
             localStorage.setItem('token', data?.token) 
             localStorage.setItem('isLoggedIn', true)
             localStorage.setItem('name',data?.data?.user?.name);
+            localStorage.setItem('email',data?.data?.user?.email);
             localStorage.setItem('projectId', 'f104bi07c490');
             dispatch(setToken(data.token));
             dispatch(setUser(userDetail));
