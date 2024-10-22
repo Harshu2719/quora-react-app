@@ -7,29 +7,38 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    background-color: #fff;
 }
 .style2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .style2Input {
     border-radius: 15px;
     border: 1px solid rgb(212, 215, 215);
     width: 90%;
     background-color: rgb(241, 242, 242);
+    padding-left: 8px;
+    font-size: 15px;
+    color: rgb(147, 149, 152);
+    height: 32px;
+    padding-top: 3px;
 }
 .style3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 4px 0px 4px 0px;
 }
 .style3Button {
     border-radius: 15px;
     width: 29%;
     border: none;
     background-color: white;
+    font-size: 13px;
+    font-weight: 600;
 }
 .style3Button:hover {
     background-color: rgb(241, 242, 242);

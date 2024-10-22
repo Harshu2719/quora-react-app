@@ -10,14 +10,9 @@ function QuestionComponent() {
     const [obj, setObj] = useState();
     const {key, value} = useParams();
     
-    //const questionRedux = useSelector(store => store.question.question)
-    // console.log(questionRedux);
 
-    const reduxObj = useSelector(store => store.question.question)
+    const reduxObj = useSelector(store => store.question.question) 
     useEffect(() => {
-      console.log(key, value)
-      console.log(reduxObj);
-      console.log(reduxObj[value])
       setObj(reduxObj[value]);
     }, [value])
     

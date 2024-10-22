@@ -6,20 +6,18 @@ import LikeDisLikeComponent from './LikeDisLikeComponent';
 
 const SingleCommentComponent = ({object, setComment, handleCommentAPICall}) => {
     const [timeOfComment, setTimeOfComment] = useState();
-
     const [isEditButtonClicked, setIsEditButtonClicked] = useState(false);
     
     const handleEditedComment = (e) => {
         handleCommentAPICall();
-        //setIsEditButtonClicked(false)
-
     }
+    console.log(object?.createdAt);
     useEffect(()=> {
         const newDate = new Date(object?.createdAt);
         const dateCount = newDate.toLocaleString('default',{day: '2-digit'});
         const month = newDate.toLocaleString('default',{ month: 'short' });
         setTimeOfComment(dateCount+'\xa0' + month);
-    }, [])
+    }, [object?.createdAt])
   return (
     <div>
         <div style={{display:'flex', paddingLeft: '7px'}}>

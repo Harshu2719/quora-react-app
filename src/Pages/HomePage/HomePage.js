@@ -9,7 +9,7 @@ import Modal from '../../Layout/SideBar/LeftSideComponent/Modal';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='homeStyle'>
         <div className='homePageStyle'>
           <div className='leftSideStyle' ><Modal /></div>
           <div className='middleStyle' ><FeedComponent /></div>

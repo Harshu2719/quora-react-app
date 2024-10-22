@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
 import './Search.css';
 
-const SearchBarButtonComponent = ({searchedTitle}) => {
+const SearchBarButtonComponent = ({searchedTitle, setSearchedTitle}) => {
+  const handleSearchedTitle = ()=> {
+    setSearchedTitle('');
+  }
   return (
     <div>
-        <Link to={'/search/title/'+ searchedTitle}> <button className='serachButton' disabled={!searchedTitle} ><FaSearch /></button></Link>
+        <Link to={'/search/title/'+ searchedTitle}> <button onClick={()=> handleSearchedTitle()} className='serachButton' disabled={!searchedTitle} ><FaSearch /></button></Link>
     </div>
   )
 }

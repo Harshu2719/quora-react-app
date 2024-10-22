@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import LogoutButtonComponent from '../LogoutButtonComponent.js';
 import { IoPersonCircleOutline } from 'react-icons/io5';
+import AuthenticationFooter from '../../../Pages/Authentication/AuthenticationFooter.js';
+//import AuthenticationFooter from '..../Pages/Authentication/AuthenticationFooter.js';
 
 const AvatarComponent = () => {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -41,11 +43,15 @@ const AvatarComponent = () => {
         </Dropdown.Item>
         <Dropdown.Item >
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <div className='logoutButtonStyle'>Theme</div>
+            <input type='checkbox' className='logoutButtonStyle' />
+            <label> Dark Theme</label>
           </div>
         </Dropdown.Item>
         <Dropdown.Item >
           <div style={{display: 'flex', justifyContent: 'center'}}><LogoutButtonComponent /></div> 
+        </Dropdown.Item>
+        <Dropdown.Item >
+          <div style={{width: '180px'}} ><AuthenticationFooter /></div> 
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

@@ -17,8 +17,9 @@ const AskQuestion = () => {
     <div className='style1'>
         <div className='style2'>
             <IoPersonCircleOutline size={36} />                
-            <input onClick={()=> handleButton()} className='style2Input' placeholder='What do you want to ask or shear' />               
-        </div>
+          <div onClick={() => handleButton()} className='style2Input' >
+            What do you want to ask or share?</div>
+          </div>
         <div className='style3'>
             <button onClick={()=> handleButton()} className='style3Button'> <TbMessageQuestion /> Ask </button>
             <p style={{marginBottom: '0'}}>|</p>

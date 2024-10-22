@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const TryQuoraComponent = () => {
   return (
     <div className='tryQuoraStyle' >
-      <Link style={{textDecoration: 'none', color: 'gray'}} to='/tryQuora'>TryQuora+</Link>
+      <Link style={{textDecoration: 'none', color: 'gray', alignSelf: 'center'}} to='/tryQuora'>TryQuora+</Link>
     </div>
   )
 }

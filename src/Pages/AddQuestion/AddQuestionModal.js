@@ -73,7 +73,7 @@ function AddQuestionModal({show, setShow}) {
               <option className='optionStyle' value="Limited">Limited</option>
             </select>
           </div>
-          <input className='inputTitleStyle' onChange={(e)=> handleTitle(e)} placeholder='Title for the post'></input>
+          <input type='text' className='inputTitleStyle' onChange={(e)=> handleTitle(e)} placeholder='Title for the post'></input>
           <textarea  onChange={(e)=> storePost(e)} className='modalStyle3' placeholder='Start writing about your post....'></textarea>
         </Modal.Body>
         <Modal.Footer>

@@ -1,10 +1,11 @@
 import React from 'react'
 import { IoPersonCircleOutline } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './FeedComponent.css'
 import DeletePostComponent from './DeletePostComponent'
 
 const FeedPostComponent = ({obj , index, setRefresh}) => {
+    const {key, value} = useParams();
   return (
     <div>
         <div className='nameImageDiv'>
@@ -17,7 +18,7 @@ const FeedPostComponent = ({obj , index, setRefresh}) => {
                 </div>
             </div>
             <div>
-                {<DeletePostComponent obj={obj} setRefresh={setRefresh}/>}
+                {(key !== 'id')&&<DeletePostComponent obj={obj} setRefresh={setRefresh}/>}
             </div>
         </div>
         <div className='titleContentStyle'>

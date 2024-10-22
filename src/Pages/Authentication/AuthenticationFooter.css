@@ -1,5 +1,7 @@
-.q-box {
-
+.flex_wrap_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
 }
 .qu-py--medium  {
     padding-top: 16px;

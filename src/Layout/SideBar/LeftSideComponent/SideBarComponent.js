@@ -6,12 +6,14 @@ const SideBarComponent = ({show, setShow}) => {
 
     return (
         <div className = 'sidebarOptions'>
-            <div className='sidebar'>
-                <img src='' alt='' />
-                <button onClick={handleShow} className='text'>Create Space+</button>
+            <div className='sidebar' onClick={handleShow}>
+                <div className='createSpaceStyle'> 
+                    <div>+</div>
+                    <button  className='createText'>Create Space</button> 
+                </div>   
             </div>
             <div className='sidebar'>
-                <img src='' alt='' />
+                <img src='https://qph.cf2.quoracdn.net/main-thumb-ti-2256-50-letkpfgwqvevkiucpspnxpsmiwmdwcca.jpeg' alt='' />
                 <p className='text'>History</p>
             </div>
             <div className='sidebar'>

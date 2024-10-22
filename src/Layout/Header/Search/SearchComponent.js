@@ -1,10 +1,10 @@
 import React from 'react';
 import './Search.css';
 
-const SearchComponent = ({setsearchedTitle}) => {
+const SearchComponent = ({setSearchedTitle}) => {
   
   const handleInput = (e)=> {
-    setsearchedTitle(e.target.value)
+    setSearchedTitle(e.target.value)
   }
   return (
     <>

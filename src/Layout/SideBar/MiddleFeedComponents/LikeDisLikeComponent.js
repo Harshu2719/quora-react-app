@@ -7,18 +7,21 @@ const LikeDisLikeComponent = ({obj}) => {
     const [dislikeCount, setDislikeCount] = useState(obj?.dislikeCount);
     const [isLikeClicked, setIsLikeClicked] = useState();
     const [isDisLikeClicked, setIsDisIsLikeClicked] = useState();
+    const [upvoteButtonColor, setUpvoteButtonColor] = useState('black');
+    const [downvoteButtonColor, setDownvoteButtonColor] = useState('black');
     
-    useEffect(()=> {
-        //console.log(obj?.isLiked,'sdfgehsdfgbdf',obj?.isDisliked, obj)
+    useEffect(()=> {       
         setIsLikeClicked(obj?.isLiked);
         setIsDisIsLikeClicked(obj?.isDisliked);
-    },[])
+    },[obj])
 
     const handleLikeDislikeAPICall = async(obj, isLike, e) => {
         console.log(e);
         console.log(localStorage.getItem('token'));
         //e.currentTarget.disabled = true;
         if(isLike) {
+            setUpvoteButtonColor('lightGray');
+            setDownvoteButtonColor('black');
             setIsLikeClicked(true)
             setIsDisIsLikeClicked(false)
             if(dislikeCount !== 0) {
@@ -28,6 +31,8 @@ const LikeDisLikeComponent = ({obj}) => {
             setLikeCount(likeCount+1)
             //Object.defineProperty(obj, "likeCount", {value: likeCount+1})           
         }else {
+            setUpvoteButtonColor('black');
+            setDownvoteButtonColor('lightGray');
             setIsLikeClicked(false)
             setIsDisIsLikeClicked(true)
             if(likeCount !== 0) {
@@ -47,14 +52,14 @@ const LikeDisLikeComponent = ({obj}) => {
             }            
         })
     }
-    //console.log(isLikeClicked, "444444444444444444444444444444444444444444444", isDisLikeClicked);
+    console.log(obj?.isLiked,'sdfgehsdfgbdf',obj?.isDisliked, obj);
   return (
     <div className='contentfooterStyle'>
         <div className='likeDislikeStyle'>
-            <button disabled={isLikeClicked} onClick={(e)=> handleLikeDislikeAPICall(obj, true, e)} className='likeDislikeCommentButtonStyle'><BiUpvote color='black'/></button>
-            <div className='upvoteBorderStyle'><p>upvote.{likeCount}</p></div>
-            <button disabled={isDisLikeClicked} onClick={(e)=> handleLikeDislikeAPICall(obj, false, e)} className='likeDislikeCommentButtonStyle'><BiDownvote color='black'/></button>
-            <div ><p>{dislikeCount}</p></div>
+            <button disabled={isLikeClicked} onClick={(e)=> handleLikeDislikeAPICall(obj, true, e)} className='likeDislikeCommentButtonStyle'><BiUpvote color={upvoteButtonColor}/>upvote.</button>
+            <div className='upvoteBorderStyle'><p className='paraStyle'>{likeCount}</p></div>
+            <button disabled={isDisLikeClicked} onClick={(e)=> handleLikeDislikeAPICall(obj, false, e)} className='likeDislikeCommentButtonStyle'><BiDownvote color={downvoteButtonColor}/></button>
+            <div ><p className='paraStyle'>{dislikeCount}</p></div>
         </div>        
     </div>
   )

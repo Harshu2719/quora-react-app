@@ -58,3 +58,6 @@
     border-right: none;
     width: 100%;
 }
+input[type="text"], textarea, select {
+    outline: none;
+}

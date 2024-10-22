@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import store from '../../ReduxStore/Store.js';
 import AuthenticationFooter from './AuthenticationFooter.js';
 import Language from './Language.js';
+import '../../index.css'
 
 const Authentication = () => {
     const [email, setEmail] = useState('');
@@ -83,7 +84,7 @@ const Authentication = () => {
   return (
     <div className='AuthenticationPageStyle'>
         <div className = "container1" >
-            <div className="container2">
+            <div className="container2"> 
                 <div className="container2box">
                     <h1 className="container2Heading">Quora</h1>
                 </div>

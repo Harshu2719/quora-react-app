@@ -42,3 +42,6 @@
     margin-bottom: 20px;
     border-radius: 4px;
 }
+input[type="text"], input[type="password"], input[type="email"] textarea, select { 
+    outline: none;
+}

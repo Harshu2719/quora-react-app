@@ -11,12 +11,14 @@ const UploadComment = ({obj}) => {
     const [comment, setComment] = useState();
     const dispatch = useDispatch();
     const allPosts = useSelector(store=>store.question.question);
-   
+
     
     const handleInputComment = (event)=> {
         setComment(event.target.value);
+        
     }
     const commentAPI = async() => {
+        
         const response = await fetch(`https://academics.newtonschool.co/api/v1/quora/comment/${obj?._id}`, {
             method: 'POST',
             headers: {
@@ -52,8 +54,11 @@ const UploadComment = ({obj}) => {
         })
         dispatch(setQuestion(updatedAllPosts));
         console.log(allPosts);
+        setComment('');
     }
-    const handleCommentAPICall = () => {
+ 
+ 
+    const handleCommentAPICall = () => {  
         commentAPI();
     }
     return (
@@ -61,7 +66,7 @@ const UploadComment = ({obj}) => {
              <div className='uploadCommentBoxStyle'>
                 <div className='commentBoxStyle'>
                     <Link className='commentProfileStyle'><IoPersonCircleOutline size={36} /></Link>
-                    <input className='commentInputStyle' onChange={(e) => { handleInputComment(e) }} placeholder='Add your comment' />
+                    <input className='commentInputStyle' value={comment} onChange={(e) => { handleInputComment(e) }} placeholder='Add your comment' />
                     <button className='commentButtonStyle' onClick={() => { handleCommentAPICall() }}>Add Comment</button>
                 </div>
                 <SeeAllComment obj={obj} setComment={setComment} handleCommentAPICall={handleCommentAPICall}/>

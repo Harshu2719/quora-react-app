@@ -5,7 +5,7 @@ const AuthenticationFooter = () => {
     return (
         <div class="q-box qu-py--medium qu-textAlign--center qu-borderTop">
             <div class="q-text qu-dynamicFontSize--small">
-                <span>
+                <span className='flex_wrap_wrap'>
                     <span class="q-box qu-display--none"></span>
                     <span className='spanStyle'>
                         <a href="https://www.quora.com/about" target="_top" className='linkStyle'>About</a>

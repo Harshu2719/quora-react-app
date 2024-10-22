@@ -4,11 +4,11 @@ import SearchBarButtonComponent from './SearchBarButtonComponent';
 import './Search.css';
 
 const SearchSubAssembly = () => {
-    const[searchedTitle, setsearchedTitle] = useState()
+    const[searchedTitle, setSearchedTitle] = useState()
   return (
     <div className='subAssemblyStyle'>
-        <SearchComponent setsearchedTitle={setsearchedTitle} />
-        <SearchBarButtonComponent searchedTitle={searchedTitle} />
+        <SearchComponent setSearchedTitle={setSearchedTitle} />
+        <SearchBarButtonComponent searchedTitle={searchedTitle} setSearchedTitle={setSearchedTitle} />
     </div>
   )
 }

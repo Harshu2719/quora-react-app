@@ -27,7 +27,7 @@
     width: 100%;
     border: 1px solid rgb(213 213 213);
     border-radius: 8px;
-   
+    background-color: #fff;
     margin-bottom: 10px;
 }
 .userNameStyle {
@@ -56,9 +56,9 @@
     border-radius: 3px;  
     
 }
-.contentText {
+/* .contentText {
     font-family: Roboto;
-}
+} */
 .nameImageDiv {
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
 .contentText {
     font-weight: 400;
     font-size: 13px;
-    font-family: -apple-system ;
+    /* font-family: -apple-system ; */
 }
 
 
@@ -95,9 +95,12 @@
     display: flex;
     align-items: center;
 }
+.paraStyle {
+    margin-bottom: 0px;
+}
 .likeDislikeStyle {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: space-around; */
     border: 1px solid rgb(213 213 213);
     border-radius: 20px;
@@ -107,7 +110,7 @@
 }
 .likeDislikeCommentButtonStyle {
     border: 1px;
-    border-radius: 100%;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.6);
 }
 .LikeCommentStyle {
@@ -120,6 +123,9 @@
     justify-content:center;
     border-right: 1px solid rgb(213 213 213);
     padding-right: 5px;
+}
+.upvoteBorderStyle:focus {
+    font-weight: 200;
 }
 
 
