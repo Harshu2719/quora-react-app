@@ -10,7 +10,7 @@ const DeletePostComponent = ({obj, setRefresh}) => {
     const dispatch = useDispatch();
     const handleRemovePost = (id) => {
         const newList = list.filter((obj)=> obj._id != id ); 
-        console.log(newList);
+        //console.log(newList);
         dispatch(setQuestion(newList))            
     }
     

@@ -12,7 +12,7 @@ export const commentsSlice = createSlice({
         setComments(state, action) {
             const postId = action.payload?.id;
             const comments = action.payload?.comments;
-            //console.log(postId, 'wertgwwwwwwwwwwwr  yE3RYHT');
+            ////console.log(postId, 'wertgwwwwwwwwwwwr  yE3RYHT');
             let compare = (a, b) => {
               if (a.createdAt < b.createdAt) {
                   return -1;
@@ -37,7 +37,7 @@ export const commentsSlice = createSlice({
             const comment = action.payload?.comment;
             const postComments = state.comments.get(postId)?? []; 
             postComments.unshift(comment);
-            console.log(postId, 'jaghdjhadmnbj,ahgdk', comment);
+            //console.log(postId, 'jaghdjhadmnbj,ahgdk', comment);
         },
         removeComments(state, action) {
           const postId = action.payload?.postId;

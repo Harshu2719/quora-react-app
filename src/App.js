@@ -1,20 +1,36 @@
-
-import './App.css';
-import HeaderComponent from './Layout/Header/HeaderComponent.js';
+import React, { useEffect, useState } from 'react'
+import RoutingComponent from './RoutingComponent'
 import { useSelector } from 'react-redux';
-import HomePage from './Pages/HomePage/HomePage.js';
+import './dusktheme.css';
+import './daytheme.css';
 
-
-function App() {
-  const isAuth = useSelector(store => store.userInfo.isAuthenticated)
-  console.log(isAuth);
- 
+const App = () => {
+    const [localStorageTheme, setLocalStorageTheme] = useState(false)
+    const theme = useSelector(store => store.themes);
+    // //console.log(theme);
+    const [themeClass, setThemeClass] = useState('day');
+  
+    useEffect(() => {
+      // Dynamically load the CSS based on the theme
+      const loadTheme = async () => {
+        if (theme.theme) {
+          setThemeClass('dusk');
+          document.body.setAttribute('data-bs-theme',"dark")
+          localStorage.setItem('theme', true);
+        } else {
+          setThemeClass('day');
+          document.body.setAttribute('data-bs-theme',"day")
+          localStorage.setItem('theme', false);
+        }
+      };
+      
+      loadTheme();
+    }, [theme.theme]); 
   return (
-  <>
-    <HeaderComponent />
-    <HomePage />
-   </>
-  );
+    <div className={themeClass} >
+        <RoutingComponent /> 
+    </div>
+  )
 }
 
-export default App;
+export default App

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const LanguageComponent = () => {
   return (
     <div id='widthId'>
-        <Link to={'/Language'}><SlGlobe size={26} color='gray' /></Link>
+        <Link to={'/Language'}><SlGlobe size={26} className='fillColor' /></Link>
     </div>
   )
 }

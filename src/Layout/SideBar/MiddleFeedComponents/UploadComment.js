@@ -38,7 +38,7 @@ const UploadComment = ({obj}) => {
         }       
         const newObj = {...data?.data, author_details}
         delete newObj?.appType;
-        console.log(newObj?.createdAt);
+        //console.log(newObj?.createdAt);
         const payload = {
             postId : obj?._id,
             comment: newObj
@@ -53,7 +53,7 @@ const UploadComment = ({obj}) => {
             return obj;
         })
         dispatch(setQuestion(updatedAllPosts));
-        console.log(allPosts);
+        //console.log(allPosts);
         setComment('');
     }
  

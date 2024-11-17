@@ -8,7 +8,7 @@ const SearchComponent = ({setSearchedTitle}) => {
   }
   return (
     <>
-      <input className='seachInputStyle' onChange={(e)=> handleInput(e)} placeholder='Quora search' type='text' />
+      <input className='searchInputStyle' onChange={(e)=> handleInput(e)} placeholder='Search Quora' type='text' />
     </>
   )
 }

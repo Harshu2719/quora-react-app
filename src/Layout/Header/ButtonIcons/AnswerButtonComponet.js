@@ -7,7 +7,7 @@ const AnswerButtonComponent = () => {
   
   return (
     <div id='widthId'>
-        <Link to={'/answer'}> <BsPencilSquare size={26} color='gray' /> </Link>
+        <Link to={'/answer'} > <BsPencilSquare className='fillColor' size={26} /></Link>
     </div>
   )
 }

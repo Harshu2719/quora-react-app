@@ -9,7 +9,7 @@ const SearchBarButtonComponent = ({searchedTitle, setSearchedTitle}) => {
   }
   return (
     <div>
-        <Link to={'/search/title/'+ searchedTitle}> <button onClick={()=> handleSearchedTitle()} className='serachButton' disabled={!searchedTitle} ><FaSearch /></button></Link>
+        <Link to={'/search/title/'+ searchedTitle}> <button onClick={()=> handleSearchedTitle()} className='searchButton' disabled={!searchedTitle} ><FaSearch /></button></Link>
     </div>
   )
 }

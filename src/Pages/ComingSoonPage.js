@@ -1,13 +1,13 @@
 import React from 'react'
 import HeaderComponent from '../Layout/Header/HeaderComponent'
 
-const ComminSoonPage = () => {
+const ComingSoonPage = () => {
   return (
     <>
         <HeaderComponent />
-        <h4>Comming Soon</h4>
+        <h4>Coming Soon</h4>
     </>
   )
 }
 
-export default ComminSoonPage;
+export default ComingSoonPage;

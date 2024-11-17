@@ -21,7 +21,7 @@ const SeeAllComment = ({obj, setComment, handleCommentAPICall}) => {
             }
         })
         const data = await response.json();
-        console.log(data?.data);
+        //console.log(data?.data);
         const payload = {
             id: obj?._id,
             comments: data?.data
@@ -31,10 +31,10 @@ const SeeAllComment = ({obj, setComment, handleCommentAPICall}) => {
     }
     useEffect(()=> {
         allCommentAPI()
-        console.log(refreshComment)
+        //console.log(refreshComment)
     }, [])
 
-    console.log(commentsMap);
+    //console.log(commentsMap);
   return (
     <div>
         {commentsMap?.get(obj._id)?.map((comment) => {

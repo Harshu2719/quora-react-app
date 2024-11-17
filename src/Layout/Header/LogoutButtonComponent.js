@@ -11,8 +11,12 @@ const LogoutButtonComponent = () => {
     const handleLogout = ()=> {
         dispatch(authenticateUser(false));
         // navigate('/');
-        localStorage.clear();
-        console.log(isAuth);
+        localStorage.removeItem('name');
+        localStorage.removeItem('email');
+        localStorage.removeItem('token');
+        localStorage.removeItem('projectId');
+        localStorage.removeItem('isLoggedIn');
+        // //console.log(isAuth);
 
     }
   return (

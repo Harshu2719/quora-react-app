@@ -1,9 +1,7 @@
-.homeStyle {
-    background-color: #f7f7f8;
-}
+
 .homePageStyle {
     display: flex;
-    width: 63%;
+    width: 75%;
     margin: auto;
     padding: 16px 16px;
 }

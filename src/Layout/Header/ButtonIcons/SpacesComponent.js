@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SpacesComponent = () => {
   return (
     <div id='widthId'>
-        <Link to='/spaces'> <FaPeopleGroup size={26} color='gray'/></Link>
+        <Link to='/spaces'> <FaPeopleGroup size={26} className='fillColor'/></Link>
     </div>
   )
 }

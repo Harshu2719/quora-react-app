@@ -16,12 +16,12 @@ const LikeDisLikeComponent = ({obj}) => {
     },[obj])
 
     const handleLikeDislikeAPICall = async(obj, isLike, e) => {
-        console.log(e);
-        console.log(localStorage.getItem('token'));
+        //console.log(e);
+        //console.log(localStorage.getItem('token'));
         //e.currentTarget.disabled = true;
         if(isLike) {
-            setUpvoteButtonColor('lightGray');
-            setDownvoteButtonColor('black');
+            setUpvoteButtonColor('blue');
+            setDownvoteButtonColor('gray');
             setIsLikeClicked(true)
             setIsDisIsLikeClicked(false)
             if(dislikeCount !== 0) {
@@ -31,8 +31,8 @@ const LikeDisLikeComponent = ({obj}) => {
             setLikeCount(likeCount+1)
             //Object.defineProperty(obj, "likeCount", {value: likeCount+1})           
         }else {
-            setUpvoteButtonColor('black');
-            setDownvoteButtonColor('lightGray');
+            setUpvoteButtonColor('gray');
+            setDownvoteButtonColor('blue');
             setIsLikeClicked(false)
             setIsDisIsLikeClicked(true)
             if(likeCount !== 0) {
@@ -52,7 +52,7 @@ const LikeDisLikeComponent = ({obj}) => {
             }            
         })
     }
-    console.log(obj?.isLiked,'sdfgehsdfgbdf',obj?.isDisliked, obj);
+    //console.log(obj?.isLiked,'sdfgehsdfgbdf',obj?.isDisliked, obj);
   return (
     <div className='contentfooterStyle'>
         <div className='likeDislikeStyle'>

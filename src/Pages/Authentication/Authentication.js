@@ -21,16 +21,16 @@ const Authentication = () => {
     const [responseMessage, setResponseMessage] = useState('')
     const dispatch = useDispatch(); 
      const isAuth = useSelector(store => store.userInfo.isAuthenticated)
-     console.log(isAuth);
-    // console.log(isAuth);
+     //console.log(isAuth);
+    // //console.log(isAuth);
     const navigate = useNavigate();
     // useEffect(()=> {
     //     if(isAuth) {
     //     navigate('/')
-    //     console.log(isAuth)
+    //     //console.log(isAuth)
     //     } else {
     //     navigate('/auth')
-    //     console.log(isAuth)
+    //     //console.log(isAuth)
     //     }
     // }, [isAuth])
     
@@ -57,24 +57,30 @@ const Authentication = () => {
                 headers: header,
                 body: JSON.stringify({...userDetail})   
             });
-                const data = await response.json();
-                console.log(data?.message)
-                console.log(data);
-                if(data?.status === 'fail') {
-                    setIsItFailed(true)
-                    setResponseMessage(data?.message)       
-                } else {
-                    localStorage.setItem('token', data?.token) 
-                    localStorage.setItem('isLoggedIn', true)
-                    localStorage.setItem('name',data?.data?.user?.name);
-                    localStorage.setItem('email',data?.data?.user?.email);
-                    localStorage.setItem('projectId', 'f104bi07c490');
-                    dispatch(setToken(data.token));
-                    // dispatch(setUser(user));
-                    dispatch(authenticateUser(true)) 
-                    // navigate('/')
-                    console.log(localStorage.getItem('token'))
-                 
+                if(response.ok){
+                    const data = await response.json();
+                    //console.log(data?.message)
+                    //console.log(data);
+                    if(data?.status === 'fail') {
+                        setIsItFailed(true)
+                        setResponseMessage(data?.message)       
+                    } else {
+                        localStorage.setItem('token', data?.token) 
+                        localStorage.setItem('isLoggedIn', true)
+                        localStorage.setItem('name',data?.data?.user?.name);
+                        localStorage.setItem('email',data?.data?.user?.email);
+                        localStorage.setItem('projectId', 'f104bi07c490');
+                    
+                        dispatch(setToken(data.token));
+                        // dispatch(setUser(user));
+                        dispatch(authenticateUser(true)) 
+                        // navigate('/')
+                        //console.log(localStorage.getItem('token'))
+                    }
+                }
+                else{
+                    setIsItFailed(true);
+                    setResponseMessage('Username or Password is incorrect');
                 }
         } catch {
             alert('Not responding server')
@@ -145,8 +151,8 @@ const Authentication = () => {
                         {isItFailed && <Alert severity="error">{responseMessage}</Alert>}
                     </div>
                 </div>
-                <Language />
-                <AuthenticationFooter />
+                {/* <Language /> */}
+                <div style={{display: 'flex', justifyContent: 'center'}}><AuthenticationFooter /></div>
             </div>
         </div>
     </div>

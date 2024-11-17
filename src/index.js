@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDom from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './Home.js';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import QuestionComponent from './Pages/QuestionComponent';
-import {Provider} from 'react-redux';
+import {Provider, useSelector} from 'react-redux';
 import store from './ReduxStore/Store';
 import Authentication from './Pages/Authentication/Authentication.js';
 import RoutingComponent from './RoutingComponent';
@@ -12,18 +12,19 @@ import SearchResultPage from './Pages/SearchResultPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnswerComponent from './Pages/AnswerPage/AnswerComponent.js';
 import ProfilePage from './Pages/Profile/ProfilePage.js';
-import ComminSoonPage from './Pages/ComminSoonPage.js';
+import ComingSoonPage from './Pages/ComingSoonPage.js';
+import App from './App.js';
 
 
 
 const Index = () => {
   
-
+  
   //useeffect => check if user is logged in or not
   // if not -> redirect to authentication page
   return (
     <Provider store={store}>
-      <RoutingComponent /> 
+      <App />
     </Provider>
   )
 }
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       children: [  
           {
             path: 'home',
-            element: <App />
+            element: <Home />
           },
           {
             path: 'question/:key?/:value?',
@@ -58,19 +59,23 @@ const router = createBrowserRouter([
           },
           {
             path: '/following',
-            element: <ComminSoonPage/>
+            element: <ComingSoonPage/>
           },
           {
             path: '/Language',
-            element: <ComminSoonPage/>
+            element: <ComingSoonPage/>
           },
           {
             path: '/spaces',
-            element: <ComminSoonPage/>
+            element: <ComingSoonPage/>
           },
           {
             path: '/tryQuora',
-            element: <ComminSoonPage/>
+            element: <ComingSoonPage/>
+          },
+          {
+            path: '/coming-soon',
+            element: <ComingSoonPage/>
           },
       ],
   }

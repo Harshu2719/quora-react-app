@@ -8,8 +8,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* Authentication Page css*/
-.container2Dusk {
+
+
+
+/* .container2Dusk {
   background-color: rgb(38, 38, 38);
   color: white;
   width: 702px;
@@ -74,12 +76,7 @@ code {
   font-size: calc(13px* var(--dynamic-font-scale, 1)) !important;
   margin-bottom: 0px;
 }
-.loginDivStyleDusk {
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: rgb(57, 56, 57);
-  margin-bottom: 16px;
-}
+
 .qu-borderTopDusk {
   border-top-style: solid;
   border-width: 1px;
@@ -92,9 +89,6 @@ code {
   color: rgb(230, 231, 232);
 }
 
-/* Home page Dusk Styling*/
-
-/* Header Dusk */
 
 .headerbox1Dusk {
   height: 51px;
@@ -113,8 +107,6 @@ code {
   border-color: rgb(57, 56, 57);
 }
 .serachButtonDusk {
-  /* border: none; */
-  height: 36px;
   background-color: rgb(24, 24, 24);
   border-color: rgb(57, 56, 57);
   color: rgb(255, 255, 255);
@@ -125,14 +117,14 @@ code {
   border-color: rgb(57, 56, 57);
   border-right: none;
   margin-left: -2px;
-}
+} 
 
-/* SideBar Dusk Style*/ 
+
 .homeStyleDusk {
   background-color: #181818;
 }
 
-/* Ask Question Dusk Style*/
+
 
 .style1Dusk {
   width: 90%;
@@ -163,9 +155,9 @@ code {
   background-color: rgb(57, 56, 57);
 }
 
-/* Middle Feed Dusk Style*/ 
+
+
 .feeddivDusk {
-  /* margin-left: 25px; */
   width: 100%;
   border: 1px solid rgb(213 213 213);
   border-radius: 8px;
@@ -211,4 +203,4 @@ code {
   justify-content: center;
   border-right: 1px solid rgb(57, 56, 57);
   padding-right: 5px;
-}
+}  */

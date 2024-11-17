@@ -10,7 +10,7 @@ const HomeComponent = () => {
   // }
   return (
     <div id='widthId' >
-      <Link to={'/home'}><FaHouse size={26} color='gray'/></Link>
+      <Link to={'/home'}><FaHouse size={26} className='fillColor'/></Link>
     </div>
   )
 }

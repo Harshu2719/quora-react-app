@@ -1,6 +1,5 @@
 .style1 {
     width: 90%;
-    border: 1px solid rgb(213 213 213);
     height: 80px;
     align-content: center;
     margin-bottom:10px;
@@ -17,12 +16,9 @@
 }
 .style2Input {
     border-radius: 15px;
-    border: 1px solid rgb(212, 215, 215);
-    width: 90%;
-    background-color: rgb(241, 242, 242);
+    width: 90%;   
     padding-left: 8px;
-    font-size: 15px;
-    color: rgb(147, 149, 152);
+    font-size: 15px;   
     height: 32px;
     padding-top: 3px;
 }
@@ -35,11 +31,7 @@
 .style3Button {
     border-radius: 15px;
     width: 29%;
-    border: none;
-    background-color: white;
+    border: none;    
     font-size: 13px;
     font-weight: 600;
-}
-.style3Button:hover {
-    background-color: rgb(241, 242, 242);
 }

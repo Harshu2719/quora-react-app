@@ -14,13 +14,16 @@ function QuestionComponent() {
     const reduxObj = useSelector(store => store.question.question) 
     useEffect(() => {
       setObj(reduxObj[value]);
+      
     }, [value])
     
   return (
     <>
       <HeaderComponent />
-      <div className='SearchHomePageStyle'>
-          <SinglePostComponent obj={obj} index={value} />
+      <div className='QuestionPageStyle'>
+        <div className='SearchHomePageStyle'>
+            <SinglePostComponent obj={obj} index={value} />
+        </div>
       </div>
     </>
   )
@@ -36,7 +39,7 @@ export default QuestionComponent
         }
       })
       const data = await response.json();
-      console.log(data)
+      //console.log(data)
       setComments(data.data);
       // setQuestion(data.data)     
     }
@@ -48,10 +51,10 @@ export default QuestionComponent
         }
       })
       const questionData = await questionResponse.json();
-      console.log(questionData) 
+      //console.log(questionData) 
       setQuestionData(questionData.data)     
     }
-    console.log(questionData, 'sdfafgadgadgadgadgafbvdghydbgn', comments)
+    //console.log(questionData, 'sdfafgadgadgadgadgafbvdghydbgn', comments)
     useEffect(()=> {
       fetchquestionComment();
       fetchquestion();

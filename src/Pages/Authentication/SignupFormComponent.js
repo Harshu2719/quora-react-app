@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { authenticateUser, setUser, setToken, loginUser } from '../../ReduxStore/AuthSlice.js';
 import './SignupComponent.css';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 const SignupFormComponent = ({handleClose}) => {
   const [name, setName] = useState('')
@@ -43,7 +45,7 @@ const SignupFormComponent = ({handleClose}) => {
             body: JSON.stringify({...userDetail})   
         })
             const data = await response.json();
-            console.log(data?.status)
+            //console.log(data?.status)
         if(data?.status === 'fail') {
             setIsItFailed(true)
             setResponseMessage(data?.message)
@@ -57,8 +59,7 @@ const SignupFormComponent = ({handleClose}) => {
             dispatch(setToken(data.token));
             dispatch(setUser(userDetail));
             dispatch(authenticateUser(true))
-            handleClose()
-       
+            handleClose()      
         }
     } catch {
         alert('Not responding server')
@@ -74,7 +75,30 @@ const SignupFormComponent = ({handleClose}) => {
 
   return (
     <>
-       <form>
+    <Form>
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Name</Form.Label>
+        <Form.Control value={name} onChange={userName} type="text" placeholder="What would like to be called?" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control value={email} onChange={userEmail} type="email" placeholder="Enter email" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control  value={password} onChange={userPassword} type="password" placeholder="Password" />
+      </Form.Group>
+      <Button onClick={()=> authenticationSignup()} variant="primary" type="button">
+        Next
+      </Button>
+    </Form>
+      {isItFailed && <Alert severity="error">{responseMessage}</Alert>}
+  </>
+  )
+}
+
+export default SignupFormComponent;
+/*<form>
           <labal>Name</labal>
           <input
             className='inputStyle'
@@ -115,10 +139,4 @@ const SignupFormComponent = ({handleClose}) => {
             >
               Next
             </button>
-        </form>
-        {isItFailed && <Alert severity="error">{responseMessage}</Alert>}
-  </>
-  )
-}
-
-export default SignupFormComponent;
+        </form> */

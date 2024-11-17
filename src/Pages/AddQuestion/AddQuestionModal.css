@@ -18,11 +18,11 @@
     transition-duration: 180ms;
     transition-timing-function: ease-in-out;
 }
-.createPostButton {
+/* .createPostButton {
     border: none;
     background-color: white;
     color: rgb(40, 40, 41)
-}
+} */
 .underlineStyle {
     height: 2px;
     width: 100%;

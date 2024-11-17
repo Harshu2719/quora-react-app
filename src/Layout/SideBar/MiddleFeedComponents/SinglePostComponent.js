@@ -8,7 +8,7 @@ import './FeedComponent.css';
 
 const SinglePostComponent = ({ obj, index, setRefresh}) => {
   const [isCommentButtonClicked, setIsCommentButtonClicked] = useState(false);
-  console.log(obj);
+  //console.log(obj);
   return (
     <div className='feeddiv'>
       <FeedPostComponent obj={obj} index={index} setRefresh={setRefresh}/>  

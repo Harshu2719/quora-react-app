@@ -5,6 +5,11 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import SignupFormComponent from './SignupFormComponent';
 import './SignupComponent.css';
+import { dark } from '@mui/material/styles/createPalette';
+import { createTheme } from '@mui/material';
+import { ThemeProvider } from '@emotion/react';
+import { useSelector } from 'react-redux';
+import store from '../../ReduxStore/Store';
 
 
 
@@ -12,7 +17,16 @@ const SignupComponent = ()=> {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const themeinStore = useSelector(store => store.themes);
+  const [selectedTheme, setSlectedTheme] = React.useState();
 
+  React.useEffect(()=> {
+    if(themeinStore.theme) {
+      setSlectedTheme('dark');
+    } else {
+      setSlectedTheme('light')
+    }
+  }, [themeinStore.theme])
   
   const style = {
   position: 'absolute',
@@ -21,13 +35,17 @@ const SignupComponent = ()=> {
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #dee0e1',
   boxShadow: 24,
   p: 4,
 };
-
+const theme = createTheme({
+  palette: {
+    mode: selectedTheme,
+  },
+});
   return (
     <div>
+      <ThemeProvider theme={theme}>
       <button className='box1' onClick={handleOpen}>
         <div className='box2'>
           <div className='box3'>
@@ -38,6 +56,7 @@ const SignupComponent = ()=> {
         </div>        
       </button>
       <Modal
+        
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -52,6 +71,7 @@ const SignupComponent = ()=> {
           </Typography>
         </Box>
       </Modal>
+      </ThemeProvider>
     </div>
   );
 }

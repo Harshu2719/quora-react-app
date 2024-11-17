@@ -11,7 +11,7 @@ const SingleCommentComponent = ({object, setComment, handleCommentAPICall}) => {
     const handleEditedComment = (e) => {
         handleCommentAPICall();
     }
-    console.log(object?.createdAt);
+    //console.log(object?.createdAt);
     useEffect(()=> {
         const newDate = new Date(object?.createdAt);
         const dateCount = newDate.toLocaleString('default',{day: '2-digit'});

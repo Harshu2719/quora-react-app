@@ -1,0 +1,124 @@
+.day {
+    .homeStyle {
+        background-color: #f7f7f8;
+    }
+
+    .loginDivStyle {
+        border-color: #dee0e1;
+    }
+    /* Authentication*/ 
+    .container2 {
+        background-color: #fff;
+        border-color: #dee0e1 ;
+    }
+    .googleButtonStyle {
+        border-color: #dee0e1; 
+        background-color: #fff; 
+    }
+    .container4box_1 { 
+        background-color: white;
+    }
+    .inputStyle {
+        border-color: #dee0e1 ;
+        background-color: #fff;
+    }
+    .container3_1box { 
+        border-color: #dee0e1;
+    }
+    .conainer3_2box {
+        color: #939598;
+    }
+    /* Home page Day Styling*/
+
+    /* Header Day */
+    .fillColor {
+        color: rgb(99, 100, 102);
+      }
+    .headerbox1 {
+        border-bottom: 1px solid #dee0e1;
+        background: white;
+    }
+    .searchInputStyle {
+        border: 1px solid #dee0e1; 
+        border-right: none;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: rgb(41, 41, 40)  ;
+    }
+    .tryQuoraStyleLink {
+        color: black;
+    }
+    .searchButton {
+    border: 1px solid #dee0e1;
+    border-left: none;
+    background-color: white;
+    }
+
+    /* SideBar  Style*/ 
+    /* .createSpaceStyle: hover {
+        background-color: rgb(236, 237, 237);
+    } */
+
+    /* Ask Question  Style*/
+
+    .style1 {
+        border: 1px solid rgb(213 213 213);
+    }
+    .style2Input {
+        background-color: rgb(241, 242, 242);
+        color: rgb(147, 149, 152);
+        border: 1px solid rgb(212, 215, 215);
+    }
+    .style3Button {
+        background-color: white;
+    }
+    .style3Button:hover {
+        background-color: rgb(241, 242, 242);
+    }
+
+    /* Middle Feed  Style*/ 
+    .feeddiv {
+        border: 1px solid rgb(213 213 213);
+        background-color: #fff;
+    }
+    .userNameStyle {
+        color: black;
+    }
+    .questionstyle {
+        color: black;
+    }
+    .deletePostButtonStyle {
+        background-color: white;
+        color: rgb(255, 255, 255);
+    }
+    .likeDislikeStyle {
+        border: 1px solid rgb(213 213 213);
+        background-color: rgb(255, 255, 255, 0.6);
+    }
+    .likeDislikeCommentButtonStyle {
+        background-color: rgb(255, 255, 255, 0.6);
+    }
+    .upvoteBorderStyle {
+        border-right: 1px solid rgb(213 213 213);
+    }
+    .commentBoxStyle {
+        background-color: rgb(241, 242, 242);         
+    }
+    .commentInputStyle {
+        border: 1px solid rgb(241, 242, 242);
+    }
+    .commentProfileStyle {
+        color: black;
+    }
+
+
+/*Advertiesment*/
+    .advertiesment {
+        border: 1px solid #dee0e1;
+    }
+    .addvertiesmentName {
+        border-top: 1px solid #dee0e1;
+    }
+
+}
+

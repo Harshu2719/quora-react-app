@@ -15,7 +15,7 @@ const SearchResultPage = () => {
     const [searchResultArray, setSearchResultArray] = useState();
     
    
-    console.log(key, value);
+    //console.log(key, value);
 
     const  searchResult = async ()=> {
         try{
@@ -30,18 +30,18 @@ const SearchResultPage = () => {
             if(response.ok) {
               const data = await response.json();
               setSearchResultArray(data?.data);
-              console.log(data);
+              //console.log(data);
               
             } else{
                
             }
 
         } catch (e) {
-            console.log(e);
+            //console.log(e);
             alert('Not responding server')
         }
     }
-    console.log(searchResultArray?.length);
+    //console.log(searchResultArray?.length);
     useEffect(()=>{
         searchResult();     
     }, [value])
@@ -76,7 +76,7 @@ export default SearchResultPage;
                   //   </div>
                   //   <div>
                   //     <Link className='questionstyle' to={`/question/id/${obj._id}`}>{obj?.title}</Link>
-                  //     {console.log(`/question/id/${obj._id}`)}
+                  //     {//console.log(`/question/id/${obj._id}`)}
                   //     <p className='contentTextSearch'>{obj?.content}</p>
                   //   </div>
                   //   <div className='contentImagedivSearch'>

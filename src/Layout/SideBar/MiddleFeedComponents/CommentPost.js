@@ -8,7 +8,7 @@ const CommentPost = ({obj, isCommentButtonClicked, setIsCommentButtonClicked}) =
     const [commentCount, setCommentCount] = useState();
     const comments = useSelector(store => store.postComments.comments);
     const {key, value} = useParams();
-    console.log(key,'ewfrwefwgw4gfsdsrrheteh', value);
+    //console.log(key,'ewfrwefwgw4gfsdsrrheteh', value);
     const handleShowComment = ()=> {
       if(key !== 'id') {
         setIsCommentButtonClicked(!isCommentButtonClicked);
@@ -22,7 +22,7 @@ const CommentPost = ({obj, isCommentButtonClicked, setIsCommentButtonClicked}) =
         setIsCommentButtonClicked(true);
       }
     },[])
-    //console.log(comments.get(obj?._id)?.length);
+    ////console.log(comments.get(obj?._id)?.length);
   return (
     <div>
         <div className='commentStyle'>

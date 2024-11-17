@@ -59,7 +59,7 @@ function AddQuestionModal({show, setShow}) {
     <>
       <Modal className='modalContent' show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <h4 className='createPostButton'>Create Post</h4>
+          <h4>Create Post</h4>
         </Modal.Header>
         <Modal.Body>
           <div className='modalStyle1'>

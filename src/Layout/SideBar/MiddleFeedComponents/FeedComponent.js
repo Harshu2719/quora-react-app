@@ -11,7 +11,7 @@ const FeedComponent = () => {
   const dispatch = useDispatch();
   const [refresh, setRefresh] = useState(false)
   const reduxFeed = useSelector(store => store.question.question)
-  // console.log(question);
+  // //console.log(question);
   const fetchFeed = async () => {
     const response = await fetch('https://academics.newtonschool.co/api/v1/quora/post', {
       method: 'GET',
@@ -20,14 +20,14 @@ const FeedComponent = () => {
       }
     })
     const data = await response.json();
-    // console.log(data)
+    // //console.log(data)
     dispatch(setQuestion(data?.data));
 
   }
 
   // useEffect(() => {
   //       dispatch(setQuestion(feed))
-  //       console.log(reduxFeed);
+  //       //console.log(reduxFeed);
   // }, [feed])
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const FeedComponent = () => {
   }, [refresh])
 
 
-  console.log(refresh);
+  //console.log(refresh);
   return (
     <>
       <div>

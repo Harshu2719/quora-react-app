@@ -24,16 +24,13 @@
 }
 .feeddiv {
     /* margin-left: 25px; */
-    width: 100%;
-    border: 1px solid rgb(213 213 213);
-    border-radius: 8px;
-    background-color: #fff;
+    width: 100%;   
+    border-radius: 8px;  
     margin-bottom: 10px;
 }
 .userNameStyle {
     font-size: 13px;
-    font-weight: 700;
-    color: rgb(41, 41, 40);
+    font-weight: 700; 
 }
 .userNameStyleDate {
     font-size: 13px;
@@ -56,9 +53,6 @@
     border-radius: 3px;  
     
 }
-/* .contentText {
-    font-family: Roboto;
-} */
 .nameImageDiv {
     display: flex;
     align-items: center;
@@ -69,8 +63,7 @@
 }
 .questionstyle {
     text-decoration: none;
-    font-size: 13px;
-    color: black;
+    font-size: 13px;    
     font-weight: 700; 
 }
 .contentText {
@@ -85,7 +78,6 @@
 
 .deletePostButtonStyle {
     border: none;
-    background: white;
 }
 
 
@@ -101,8 +93,7 @@
 .likeDislikeStyle {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    border: 1px solid rgb(213 213 213);
+    /* justify-content: space-around; */ 
     border-radius: 20px;
     width: 150px;
     background-color: rgb(255, 255, 255, 0.6);
@@ -111,7 +102,7 @@
 .likeDislikeCommentButtonStyle {
     border: 1px;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255, 0.6);
+   
 }
 .LikeCommentStyle {
     display: flex;
@@ -121,7 +112,7 @@
 .upvoteBorderStyle {
     display: flex;
     justify-content:center;
-    border-right: 1px solid rgb(213 213 213);
+    
     padding-right: 5px;
 }
 .upvoteBorderStyle:focus {
@@ -140,20 +131,17 @@
 .commentBoxStyle {
     display: flex;
     align-items: center;
-    background-color: rgb(241, 242, 242);  
     justify-content: space-evenly;  
     border-radius: 0px 0px 8px 8px;
     height: 55px;
 }
 .commentProfileStyle {
     text-decoration: none;
-    color: black;
 }
 .commentInputStyle {
-    width: 70%;
+    width: 73%;
     border-radius: 25px;
     height: 35px;
-    border: 1px solid rgb(241, 242, 242);
     font-size: 15px;
     font-weight: 400;
     padding: 10px;

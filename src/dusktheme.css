@@ -1,0 +1,202 @@
+
+/* SideBar  Style*/ 
+
+.dusk {
+  .homeStyle {
+    background-color: #181818;
+  }
+
+  .loginDivStyle {
+    border-color: rgb(57, 56, 57);
+  }
+
+  /* Authentication Page css*/
+  .container2 {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border: 1px solid rgb(38, 38, 38);
+  }
+  .container2box {
+    color: rgb(230, 231, 232);
+  }
+  .googleButtonStyle {
+    border-color: rgb(57, 56, 57); 
+    background-color: rgb(24,24,24); 
+  }
+  .container4box_1 { 
+    background-color: rgb(24, 24, 24);
+    color: rgb(230, 231, 232)
+  }
+  .inputStyle {
+    border-color: rgb(57, 56, 57); 
+    background-color: rgb(24, 24, 24);  
+    color: rgb(255, 255, 255);
+  }
+  .container3_1box { 
+    border-color: rgb(57, 56, 57);
+  }
+  .conainer3_2box {
+    color: rgb(177, 179, 182);  
+  }
+    
+  .qu-borderTop {
+    border-color: rgb(57, 56, 57);
+  }
+
+  .linkStyle {
+    color: rgb(230, 231, 232);
+  }
+
+  /* Home page Dusk Styling*/
+
+  /* Header Dusk */
+  .fillColor {
+    color: rgb(230, 231, 232);
+  }
+  .headerbox1 {
+    border-bottom: 1px solid rgb(38, 38, 38);
+    background-color: rgb(38, 38, 38);
+  }
+  .searchInputStyle {
+    background-color: rgb(24, 24, 24);
+    border: 1px solid rgb(57, 56, 57);
+    border-right: none;
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  rgb(230, 231, 232)  ;
+}
+  .searchButton {
+    background-color: rgb(24, 24, 24);
+    color: rgb(230, 231, 232);
+    border: 1px solid rgb(57, 56, 57);
+    border-left: none;
+  }
+  .tryQuoraStyle {
+    border: 1px solid rgb(76, 76, 76);
+  }
+  .tryQuoraStyleLink {
+    color: rgb(230, 231, 232);
+  }
+
+  /* SideBar  Style*/ 
+  .homeStyle {
+    background-color: #181818;
+  }
+  /*LeftSide Style*/
+  .createSpaceStyle {
+    background-color: rgb(38, 38, 38);
+  }
+  .plusStyle {
+    color: rgb(230, 231, 232);
+    background-color: rgb(38, 38, 38);
+  }
+  .createText {
+    color: rgb(230, 231, 232);
+    background-color: rgb(38, 38, 38);
+  }
+  .text {
+    color: rgb(230, 231, 232);
+  }
+  
+
+  /* Ask Question  Style*/
+
+  .style1 {
+    border: 1px solid rgb(56, 57, 56);
+    background-color: rgb(38, 38, 38);
+  }
+  .style2 {
+    color: rgb(230, 231, 232);
+  }
+  .style2Input {
+    border: 1px solid rgb(57, 56, 57);
+    background-color: rgb(32, 32, 32);
+    color: rgb(230, 231, 232);
+  }
+  .style3Button {
+    background-color: rgb(38, 38, 38);
+    color: rgb(230, 231, 232);
+  }
+  .style3Button:hover {
+    background-color: rgb(57, 56, 57);
+  }
+
+  /* Add question modal*/
+  .modalContent {
+    background-color: rgb(24, 24, 24);
+    border-color: rgb(57, 56, 57);
+  }
+  .modal-header {
+    background-color: rgb(24, 24, 24);
+    border-bottom-color: rgb(57, 56, 57);
+  }
+  .modal-body {
+    background-color: rgb(24, 24, 24);
+  }
+  .modal-footer {
+    background-color: rgb(24, 24, 24);
+  }
+
+
+  /* Middle Feed  Style*/ 
+  .feeddiv {
+    border: 1px solid rgb(213 213 213);
+    background-color: rgb(38, 38, 38);
+    border-color: rgb(57, 56, 57);
+    color: rgb(230, 231, 232);
+  }
+  .userNameStyle {
+    color: rgb(230, 231, 232);
+  }
+  .questionstyle {
+    color: rgb(230, 231, 232);
+  }
+  .deletePostButtonStyle {
+    background-color: rgb(38, 38, 38);
+    color: rgb(230, 231, 232);
+  }
+  .likeDislikeStyle {
+    border: 1px solid rgb(57, 56, 57);
+    background-color: rgb(49, 49, 49);
+    color: rgb(230, 231, 232);
+  }
+  .likeDislikeCommentButtonStyle {
+    background-color: rgb(38, 38, 38, 0.6);
+    color: rgb(230, 231, 232);
+  }
+  .upvoteBorderStyle {
+    border-right: 1px solid rgb(57, 56, 57);  
+  }
+  .commentBoxStyle {
+    background-color: #202020;         
+  }
+  .commentInputStyle {
+    border: 1px solid rgb(38, 38, 38);
+    background-color: rgb(24, 24, 24);
+  }
+  .commentProfileStyle {
+    color: rgb(230, 231, 232);
+  }
+
+  /*Advertiesment*/
+  .advertiesment {
+    border: 1px solid rgb(76, 76, 76);
+    background-color: rgb(38, 38, 38);
+  }
+  .addvertiesmentName {
+      border-top: 1px solid rgb(76, 76, 76);
+  }
+
+
+
+    /* Question page*/
+
+  .QuestionPageStyle {
+    background-color: #181818; 
+    height: calc(100vh - 51px);
+  }
+  .SearchHomePageStyle {
+    background-color: #181818; 
+  }
+}
+
