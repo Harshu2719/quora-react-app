@@ -21,9 +21,6 @@
 .qu-dynamicFontSize--small {
     font-size: calc(13px* var(--dynamic-font-scale, 1)) !important;
 }
-.qu-display--none {
-    /* display: none; */
-}
 .linkStyle {
     box-sizing: border-box;
     border-radius: 2px;

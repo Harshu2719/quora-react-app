@@ -36,7 +36,6 @@
     justify-content: center;
     font-family: Century;
     font-weight: 600;
-    /* margin-bottom: 8px; */
     margin-top: 16px;
 }
 .container3box {
@@ -128,7 +127,6 @@ input[type="email"], input[type="password"], input[type="text"] textarea, select
     background-color: #2e69ff;
     cursor: pointer;
     white-space: nowrap;
-    /* display: inline-flex; */
     text-align: center;
     appearance: none !important;
 }

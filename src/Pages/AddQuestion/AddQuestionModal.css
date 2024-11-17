@@ -1,9 +1,5 @@
 .modalStyle1 {
-    /* display: flex;
-    justify-content: space-around; */
     align-items: center;
-    
-
 }
 .modalContent {
     box-sizing: border-box;
@@ -18,11 +14,7 @@
     transition-duration: 180ms;
     transition-timing-function: ease-in-out;
 }
-/* .createPostButton {
-    border: none;
-    background-color: white;
-    color: rgb(40, 40, 41)
-} */
+
 .underlineStyle {
     height: 2px;
     width: 100%;
@@ -50,7 +42,7 @@
     border-right: none;
     width: 100%;
 }
-.inputTitleStyle : focus {
+.inputTitleStyle:focus {
     border-bottom: 1px solid #dee0e1;
     border-top: none;
     margin-bottom: 4px;
